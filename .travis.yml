@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t HaykYegh/docker-react -f Dockerfile.dev .
+  - docker build -t haykyegh/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run HaykYegh/docker-react npm run test -- --coverage
+  - docker run haykyegh/docker-react npm run test -- --coverage
